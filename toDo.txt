@@ -1,0 +1,44 @@
+
+TO-DO
+======
+BIG STUFF
+1. @Media, screen resize based on aspect ratio
+2. Convert to NodeJS project for flexibility
+3. Host site through NAS
+4. Fill out projects page
+5. Fill out photos page
+
+HOME
+1. Link photo of the day
+    a. randomize photo
+    b. background
+    c. make photo fit marginally better
+2. Webring
+    a. find suitable rings
+    b. apply?
+3. fill out projects
+    a. cycle pages between projects (atleast 4)
+        I. left and right arrow flows smoothly
+        II. dots on the bottom to indicate project/page number
+          i. click the dots to move pages  
+4. visit counter
+5. Weather
+6. Guest book
+
+PROJECTS
+1. Header/intro
+2. Project containers
+3. Photos that can be expanded (copy from Photos page)
+
+PHOTOS -- See Dimden.dev
+1. Photo viewer with click to expand. 
+2. Sort by date
+3. Random photo button?
+4. description on maximize photo
+ 
+
+
+Peronsal Lists --could use to keep track/remember stuff
+1. Movies
+2. Games
+3. Music/Concerts

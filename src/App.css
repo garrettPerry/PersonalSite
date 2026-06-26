@@ -1,0 +1,60 @@
+body {
+  background: #ead7c5;
+  font-size: 14px;
+  color: #3d2a14;
+}
+
+.homepage-body {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 325px 325px 240px 200px;
+  grid-template-areas: 
+    "banner banner banner"
+    "about about photo"
+    "weather projects projects"
+    "visitors guestbook webring";
+
+  justify-content: center;
+}
+
+.projectspage-body {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* Panels */
+.panel {
+    background: #f5efe6;
+    border: 1px solid rgba(139, 100, 60, 0.25);
+    overflow: hidden;
+  }
+
+  .panel-header {
+    background: #ecd2b3;
+    border-bottom: 1px solid rgba(139, 100, 60, 0.22);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #5a3d20;
+    font-weight: 400;
+  }
+
+  .panel-body {
+    padding: 8px 12px;
+    font-size: 15px;
+    line-height: 1.25;
+    overflow: auto;
+  }
+
+  .panel-body a {
+    color:#963500
+  }
