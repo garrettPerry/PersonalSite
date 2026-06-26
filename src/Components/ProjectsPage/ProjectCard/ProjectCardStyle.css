@@ -1,11 +1,11 @@
 .project-card {
   display: grid;
-  overflow: hidden;
-  height: 280px;
-
   grid-template-columns: 33% 67%;
   grid-template-areas: 
     "project-image project-body";
+
+  background: #F4E4D1;
+
 }
 
 .project-image {
@@ -19,25 +19,21 @@
 }
 
 .project-body {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 12px;
-  
   line-height: 1.55;
+  height: 240px;
+  overflow-y: scroll;
+  
 }
 
 .project-title {
-  margin: 0 0 5px;
   font-size: 20px;
   font-weight: 900;
 }
 
 .project-desc-box {
-  background: #ecd2b3;
-  border-radius: 4px;
-  padding: 10px;
+  background: #F4E4D1;
+  margin-bottom: 20px;
+
 }
   .project-desc-box button{
   color:#963500;

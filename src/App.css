@@ -10,7 +10,7 @@ body {
   padding: 20px;
   
   grid-template-columns: 25% 25% 25%;
-  grid-template-rows: 325px 325px 240px 200px;
+  grid-template-rows: 325px 325px 240px 240px;
   grid-template-areas: 
     "banner banner banner"
     "about about photo"
@@ -23,6 +23,7 @@ body {
 .projectspage-body {
   display: flex;
   flex-direction: column;
+  width: 80%;
   gap: 35px;
 }
 
@@ -32,7 +33,6 @@ body {
     border: 1px solid rgba(139, 100, 60, 0.25);
     overflow: hidden;
   }
-
   .panel-header {
     background: #ecd2b3;
     border-bottom: 1px solid rgba(139, 100, 60, 0.22);
@@ -47,14 +47,12 @@ body {
     color: #5a3d20;
     font-weight: 400;
   }
-
   .panel-body {
     padding: 8px 12px;
     font-size: 15px;
     line-height: 1.25;
     overflow: auto;
   }
-
-  .panel-body a {
-    color:#963500
-  }
+    .panel-body a {
+      color:#963500
+    }

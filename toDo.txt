@@ -26,9 +26,12 @@ HOME
 6. Guest book
 
 PROJECTS
-1. Header/intro
-2. Project containers
+1. Header/intro DONE
+2. Project containers DONE
 3. Photos that can be expanded (copy from Photos page)
+4. Fix css so project panels take up same percentage of the screen as the home page
+    a. Should be full height and display all the text
+5. Implement the see more/see less function
 
 PHOTOS -- See Dimden.dev
 1. Photo viewer with click to expand. 
