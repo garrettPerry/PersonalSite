@@ -9,7 +9,7 @@ return (
       <span>Most Recent</span>    
     </div>
     <div className="project-card">    
-      <img src="/src/Assets/AssetPhotos/tempProjectImage.png" alt="Project Image" className="project-image" style={{gridArea: 'project-image'}} />
+      <img src="/src/Assets/ProjectPhotos/NocTool.png" alt="Project Image" className="project-image" style={{gridArea: 'project-image'}} />
       <div className="project-body" style={{gridArea: 'project-body'}}>
         <h3 className="project-title">Service Desk Remote Tool</h3>
         <div className="project-desc-box">

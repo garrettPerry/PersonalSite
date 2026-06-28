@@ -1,7 +1,8 @@
 body {
-  background: #ead7c5;
-  font-size: 14px;
+  background-color: #ead7c5;
+  font-size: 15px;
   color: #3d2a14;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .homepage-body {
@@ -16,7 +17,6 @@ body {
     "about about photo"
     "weather projects projects"
     "visitors guestbook webring";
-
   justify-content: center;
 }
 
@@ -24,12 +24,13 @@ body {
   display: flex;
   flex-direction: column;
   width: 80%;
+  margin: 0 auto;
   gap: 35px;
 }
 
 /* Panels */
 .panel {
-    background: #f5efe6;
+    background: #F4E4D1;
     border: 1px solid rgba(139, 100, 60, 0.25);
     overflow: hidden;
   }
@@ -44,12 +45,11 @@ body {
     font-size: 12px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: #5a3d20;
+    color: #3d2a14;
     font-weight: 400;
   }
   .panel-body {
     padding: 8px 12px;
-    font-size: 15px;
     line-height: 1.25;
     overflow: auto;
   }

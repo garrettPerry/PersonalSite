@@ -16,11 +16,12 @@
 
 .photo-description {
   position: absolute;
-  top: 75%;
+  top: 85%;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(236, 210, 179, 0.92);
-  border-radius: 6px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   padding: 5px 10px;
 
   max-width: 50%;
