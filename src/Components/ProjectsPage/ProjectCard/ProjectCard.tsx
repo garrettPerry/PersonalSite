@@ -14,13 +14,16 @@ return (
   <div className={`project-card ${showMore ? 'project-card--expanded' : ''}`}>
     <div className="project-image" style={{gridArea: 'project-image'}}>
       <img src="src/Assets/ProjectPhotos/NocTool.png" alt="Project Image"  />
+      <span className="project-image-nav"> turn into photo selector </span>
     </div>
+    
+
 
     
     <div className="project-body" style={{gridArea: 'project-body'}}>
       <h3 className="project-title">Service Desk Remote Tool</h3>
       <div className="project-desc-box">
-        <p> 
+        <p> {/* pressing the button makes the dots disappear and adds moreContent*/}
           {props.content}
           <span id="dots" style={{display: showMore ? 'none' : 'inline'}}>... 
           </span>

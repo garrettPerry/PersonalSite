@@ -14,17 +14,32 @@
 }
 
 .project-image {
-  background: #F4E4D1;
   height: 100%;
   width: 100%;
   object-fit: contain;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
 }
   .project-image img {
     width: 90%;
     aspect-ratio: 1;
-    align-self: top;
   }
+ .project-card--expanded .project-image {
+  align-items: center;
+  justify-self: center;
+  }
+  
+.project-image-nav {
+  background-color: #ad8671;
+  transform: translateY(-150%);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+  z-index: 2;
+}
+
 
 .project-body {
   line-height: 1.55;
@@ -54,7 +69,6 @@
 .project-date {
   margin-top: auto;
   align-self: flex-end;
-  justify-content: flex-end;
 
   font-size: 10px;
   font-weight: 400;
@@ -62,5 +76,4 @@
   color: #5a3d20;
   margin-bottom: 3px;
 }
-
 

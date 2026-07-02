@@ -1,47 +1,57 @@
-.project-card {
+.projectpanel-card {
   display: grid;
-  overflow: hidden;
-
   grid-template-columns: 33% 67%;
   grid-template-areas: 
     "project-image project-body";
+  min-height: 0;
+  max-height: 210px;
+
+  overflow: hidden;
+  background: #F4E4D1;
 }
 
-.project-image {
-  background: #9d8343;
-  object-fit: contain;
-  display: flex;
+.projectpanel-image {
+  object-fit: cover;
+  object-position: center;
+  display: block;
   align-items: center;
-  justify-content: center;
-  height: 100%;
   width: 100%;
+  max-height: 210px;
 }
+  .projectpanel-image img {
+    object-fit: contain;
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+    max-height: 210px
+  }
 
-.project-body {
+.projectpanel-body {
   padding: 20px;
+  padding-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   line-height: 1.55;
 }
 
-.project-title {
-  margin: 0 0 15px;
+.projectpanel-title {
+  margin: 0 0 0px;
   font-size: 20px;
   font-weight: 900;
 }
 
-.project-desc-box {
+.projectpanel-desc-box {
   background: #ecd2b3;
   border-radius: 4px;
   padding: 10px;
 }
-  .project-desc-box a{
+  .projectpanel-desc-box a{
   color:#963500
   }
 
-.project-date {
-  margin-top: auto;
+.projectpanel-date {
+    margin-top: auto;
   align-self: flex-end;
 
   font-size: 10px;
