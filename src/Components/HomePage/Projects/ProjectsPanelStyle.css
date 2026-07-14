@@ -21,9 +21,11 @@
   .projectpanel-image img {
     object-fit: contain;
     width: 100%;
-    aspect-ratio: 1/1;
     height: auto;
-    max-height: 210px
+    max-height: 210px;
+    object-position: left;
+    border: 5px solid #F4E4D1;
+
   }
 
 .projectpanel-body {

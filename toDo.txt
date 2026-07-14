@@ -45,3 +45,9 @@ Peronsal Lists --could use to keep track/remember stuff
 1. Movies
 2. Games
 3. Music/Concerts
+
+
+Make site responsive to different screen sizes
+https://www.youtube.com/watch?v=2IV08sP9m3U
+
+Accessibility

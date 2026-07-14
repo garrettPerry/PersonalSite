@@ -1,29 +1,35 @@
 import './ProjectCardStyle.css';
-import '../ViewSettings/ViewSettings';
 import { useState } from 'react';
 
-function ProjectsCard(props: { content: string; moreContent: string; } ) {
-
+function ProjectsCard(
+  props: {
+    header: string;
+    content: string;
+    moreContent: string;
+    mainPhoto: string;
+    openZoom: (zoomedImage: string) => void;
+  }
+) {
   const [showMore, setShowMore] = useState(false);
-  
+
   const toggleReadMore = () => {
     setShowMore(!showMore);
   };
 
-return (    
-  <div className={`project-card ${showMore ? 'project-card--expanded' : ''}`}>
-    <div className="project-image" style={{gridArea: 'project-image'}}>
-      <img src="src/Assets/ProjectPhotos/NocTool.png" alt="Project Image"  />
-      <span className="project-image-nav"> turn into photo selector </span>
-    </div>
-    
+  const handleImageClick = () => {
+    props.openZoom(props.mainPhoto);
+  };
 
-
+  return (
+    <div className={`project-card ${showMore ? 'project-card--expanded' : ''}`}>
+      <div className="project-image" style={{ gridArea: 'project-image' }}>
+        <img src={props.mainPhoto} alt="Project Image" onClick={handleImageClick} />
+      </div>
     
     <div className="project-body" style={{gridArea: 'project-body'}}>
-      <h3 className="project-title">Service Desk Remote Tool</h3>
+      <h3 className="project-title">{props.header}</h3>
       <div className="project-desc-box">
-        <p> {/* pressing the button makes the dots disappear and adds moreContent*/}
+        <p>{/* pressing the button makes the dots disappear and adds moreContent*/}
           {props.content}
           <span id="dots" style={{display: showMore ? 'none' : 'inline'}}>... 
           </span>

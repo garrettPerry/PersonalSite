@@ -4,6 +4,9 @@ body {
   color: #3d2a14;
   font-family: "Cormorant Garamond", serif;
 }
+  body a {
+    color: #963500;
+  }
 
 .homepage-body {
   display: grid;
@@ -36,7 +39,7 @@ body {
   }
   .panel-header {
     background: #ecd2b3;
-    border-bottom: 1px solid rgba(139, 100, 60, 0.22);
+    border-bottom: 1px solid rgba(139, 100, 60, 0.25);
     padding: 5px 10px;
     display: flex;
     align-items: center;
@@ -53,6 +56,39 @@ body {
     line-height: 1.25;
     overflow: auto;
   }
-    .panel-body a {
-      color:#963500
+
+/* Projects page zoom into image on click, zoom out on click */
+.projectspage-image-container {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000007d;
+  z-index: 1;
+}
+  .projectspage-image-foreground {
+    position: fixed;
+    inset: 25% 5%;
+    z-index: 2;
+
+    background-color: rgb(121, 121, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+    text-align: center;
     }
+    .projectspage-image-foreground img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+  .projectspage-image-container button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #000000;
+    background-color: #00000000;
+    cursor:pointer;
+  }
