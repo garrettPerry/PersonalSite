@@ -16,5 +16,5 @@
     height: auto;
     max-height: 210px;
     object-position: left;
-    border: 5px solid #F4E4D1;
+    border: 5px solid var(--foreground-color);
 }

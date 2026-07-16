@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
 
-  background-image: url("src/assets/AssetPhotos/BannerImageBlur.png");
+  background-image: url("src/Assets/AssetPhotos/BannerImageBlur.png");
   background-size: cover;
   background-position: center;
 }

@@ -2,7 +2,7 @@
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.08em;
-  color: #5a3d20;
+  color: var(--text-color);
   margin-bottom: 3px;
 }  
 
