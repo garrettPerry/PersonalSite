@@ -4,6 +4,10 @@
   grid-template-areas: 
     "project-image project-body";
   min-height: 0;
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> f4c000e (Project image navigation and re-did the color palette)
 
   overflow: hidden;
   background: var(--foreground-color);
@@ -15,7 +19,11 @@
   display: block;
   align-items: center;
   width: 100%;
+<<<<<<< HEAD
   border: 5px solid var(--foreground-color);
+=======
+   /* max-height: 210px;  breaks read*/
+>>>>>>> f4c000e (Project image navigation and re-did the color palette)
 }
   .projectpanel-image img {
     object-fit: contain;

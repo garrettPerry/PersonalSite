@@ -15,7 +15,11 @@
   box-sizing: border-box;
   padding: 1rem;
 
+<<<<<<< HEAD
 background-color: var(--header-color);  display: flex;
+=======
+background-color: #ead7c5;  display: flex;
+>>>>>>> f4c000e (Project image navigation and re-did the color palette)
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -27,9 +31,14 @@ background-color: var(--header-color);  display: flex;
     }
     .image-foreground button {
         position: absolute;
+<<<<<<< HEAD
         color: var(--accent-color);
         background-color: var(--foreground-color);
         border-color: var(--accent-color);
+=======
+        color: #000000;
+        background-color: #00000000;
+>>>>>>> f4c000e (Project image navigation and re-did the color palette)
         cursor:pointer;
         font-size: 24px;
         text-align: center;
@@ -60,7 +69,11 @@ background-color: var(--header-color);  display: flex;
     align-items: center;
     gap: 0.5rem;
 
+<<<<<<< HEAD
     background-color: var(--foreground-color);
+=======
+    background-color: #f0f0f0;
+>>>>>>> f4c000e (Project image navigation and re-did the color palette)
     padding: 0.5rem;
     box-sizing: border-box;
     overflow: hidden;

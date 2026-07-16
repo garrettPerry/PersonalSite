@@ -16,11 +16,31 @@ const mainPhotoNOC = [
        "src/Assets/ProjectPhotos/NocTool/NocRedesign3.png",
        "src/Assets/ProjectPhotos/NocTool/NocRedesign4.png",
 ];
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f4c000e (Project image navigation and re-did the color palette)
 
 //GPERRY.LIVE
+
 const cardHeaderSite = "gperry.live";
+<<<<<<< HEAD
 const cardContentSite1 = "The site you are currently on";
 const cardContentSite2 = "\ntest2";
+=======
+
+
+const cardContentSite1 = 
+       "This website is a standard react project using HTML, CSS and Typescript. It has no real purpose, being somewhere between coding practice, personal online storage and a resume. Although I did work on a React project in college (see below), I never worked on the front end, mainly doing database work and making sure data flowed between the pages. As you can see this site is far more focused on aesthetics than data flow and functionality but I also have a terrible eye for aesthetics which leaves me quite the conundrum. I spent a lot of time scrolling through webrings of different people’s personal websites, and while I appreciate the whimsy of many people’s sites, I was looking for mine to be a bit more minimalist and cohesive, hence the design you see here.";
+
+const cardContentSite2 = 
+       "\n\nRegardless of my own creative limitations, I wanted to create a website that combined modern minimal style with some web 2.0 charm. The two inspirations for the home page is my favorite modern design language, Microsoft’s Metro, and the Australia INfront 2003 site. <link>  Metro, despite its flawed implementation in Windows 8, had a lot of potential and I’m still a big fan of the solid obvious geometry and clear distinction between different functionality. The INfront site inspiration was for similar reasons, each aspect of the site is clearly broken down in different areas and I love the look of a site that looked very futuristic in the early 2000’s. Although Metro’s initial implementation does look admittedly dated, its strange to think my modern inspiration and retro inspiration were only released 7 years apart, yet they look and feel so different.\n\nThis website is going to be a work in progress likely until I cease development, there is a lot of functionality that isn’t yet finished and I’m sure I’ll come up with new idea much faster than I’ll be able to implement them. If you have any ideas or comments about the site, let me know in the guestbook<link> or shoot me an email at webmaster@gperry.live<link>" + "";
+
+//https://www.webdesignmuseum.org/gallery/australian-infront-2003
+
+
+>>>>>>> f4c000e (Project image navigation and re-did the color palette)
 
 //MISC IMAGES FOR TESTING
 const mainPhotoMisc = [
