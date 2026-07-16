@@ -1,7 +1,7 @@
 body {
-  background-color: #ead7c5;
+  background-color: #ECD2B3FF;
   font-size: 15px;
-  color: #3d2a14;
+  color: #302211FF;
   font-family: "Cormorant Garamond", serif;
 }
   body a {
@@ -33,12 +33,14 @@ body {
 
 /* Panels */
 .panel {
-    background: #F4E4D1;
-    border: 1px solid rgba(139, 100, 60, 0.25);
+    background: #F4E4D1FF;
+    border: 1px solid 302211FF;
     overflow: hidden;
+    box-shadow: 3px 7px 7px hsl(0deg 0% 0% / 0.3);
+
   }
   .panel-header {
-    background: #ecd2b3;
+    background: #d1b694;
     border-bottom: 1px solid rgba(139, 100, 60, 0.25);
     padding: 5px 10px;
     display: flex;
@@ -48,47 +50,11 @@ body {
     font-size: 12px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: #3d2a14;
+    color: #2c2823;
     font-weight: 400;
   }
   .panel-body {
     padding: 8px 12px;
     line-height: 1.25;
     overflow: auto;
-  }
-
-/* Projects page zoom into image on click, zoom out on click */
-.projectspage-image-container {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #0000007d;
-  z-index: 1;
-}
-  .projectspage-image-foreground {
-    position: fixed;
-    inset: 25% 5%;
-    z-index: 2;
-
-    background-color: rgb(121, 121, 121);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 32px;
-    text-align: center;
-    }
-    .projectspage-image-foreground img {
-      max-width: 90%;
-      max-height: 90%;
-    }
-  .projectspage-image-container button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    color: #000000;
-    background-color: #00000000;
-    cursor:pointer;
   }

@@ -6,8 +6,8 @@ function ProjectsCard(
     header: string;
     content: string;
     moreContent: string;
-    mainPhoto: string;
-    openZoom: (zoomedImage: string) => void;
+    photoArray: string[];
+    openZoom: (zoomedImage: string[]) => void;
   }
 ) {
   const [showMore, setShowMore] = useState(false);
@@ -17,13 +17,13 @@ function ProjectsCard(
   };
 
   const handleImageClick = () => {
-    props.openZoom(props.mainPhoto);
+    props.openZoom(props.photoArray);
   };
 
   return (
     <div className={`project-card ${showMore ? 'project-card--expanded' : ''}`}>
       <div className="project-image" style={{ gridArea: 'project-image' }}>
-        <img src={props.mainPhoto} alt="Project Image" onClick={handleImageClick} />
+        <img src={props.photoArray[0]} alt="Project Image" onClick={handleImageClick} />
       </div>
     
     <div className="project-body" style={{gridArea: 'project-body'}}>

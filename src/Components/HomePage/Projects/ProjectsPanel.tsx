@@ -10,7 +10,7 @@ return (
     </div>
     <div className="projectpanel-card"> 
       <div className="projectpanel-image">
-        <img src="/src/Assets/ProjectPhotos/NocTool.png" alt="Project Image" style={{gridArea: 'project-image'}} />
+        <img src="/src/Assets/ProjectPhotos/NocTool/NocTool.png" alt="Project Image" style={{gridArea: 'project-image'}} />
       </div>   
       <div className="projectpanel-body" style={{gridArea: 'project-body'}}>
         <h3 className="projectpanel-title">Service Desk Remote Tool</h3>

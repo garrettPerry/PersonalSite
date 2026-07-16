@@ -4,7 +4,7 @@
   grid-template-areas: 
     "project-image project-body";
   min-height: 0;
-  max-height: 210px;
+ 
 
   overflow: hidden;
   background: #F4E4D1;
@@ -16,7 +16,7 @@
   display: block;
   align-items: center;
   width: 100%;
-  max-height: 210px;
+   /* max-height: 210px;  breaks read*/
 }
   .projectpanel-image img {
     object-fit: contain;
