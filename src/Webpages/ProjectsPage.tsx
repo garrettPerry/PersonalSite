@@ -19,12 +19,15 @@ const mainPhotoNOC = [
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 
 >>>>>>> f4c000e (Project image navigation and re-did the color palette)
 
+=======
+>>>>>>> 716fd2c (Disregard Commit)
 //GPERRY.LIVE
-
 const cardHeaderSite = "gperry.live";
+<<<<<<< HEAD
 <<<<<<< HEAD
 const cardContentSite1 = "The site you are currently on";
 const cardContentSite2 = "\ntest2";
@@ -41,6 +44,10 @@ const cardContentSite2 =
 
 
 >>>>>>> f4c000e (Project image navigation and re-did the color palette)
+=======
+const cardContentSite1 = "The site you are currently on";
+const cardContentSite2 = "\ntest2";
+>>>>>>> 716fd2c (Disregard Commit)
 
 //MISC IMAGES FOR TESTING
 const mainPhotoMisc = [

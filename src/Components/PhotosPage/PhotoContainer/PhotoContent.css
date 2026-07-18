@@ -16,9 +16,5 @@
     height: auto;
     max-height: 210px;
     object-position: left;
-<<<<<<< HEAD
     border: 5px solid var(--foreground-color);
-=======
-    border: 5px solid #F4E4D1;
->>>>>>> f4c000e (Project image navigation and re-did the color palette)
 }
