@@ -11,18 +11,15 @@
   position: fixed;
   inset: 25% 5%;
   z-index: 2;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-sizing: border-box;
   padding: 1rem;
 
-<<<<<<< HEAD
-background-color: var(--header-color);  display: flex;
-=======
-background-color: #ead7c5;  display: flex;
->>>>>>> f4c000e (Project image navigation and re-did the color palette)
+  background-color: var(--header-color);  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
     .image-foreground img {
       max-width: 100%;
@@ -31,60 +28,96 @@ background-color: #ead7c5;  display: flex;
     }
     .image-foreground button {
         position: absolute;
-<<<<<<< HEAD
-        color: var(--accent-color);
+        color: var(--text-color);
         background-color: var(--foreground-color);
-        border-color: var(--accent-color);
-=======
-        color: #000000;
-        background-color: #00000000;
->>>>>>> f4c000e (Project image navigation and re-did the color palette)
         cursor:pointer;
         text-align: center;
     }
 
 .nav-button-close {
   top: 10px;
-  right: 10px;
+  right: 1rem;
+  font-size: 24px;
+
 }
 .nav-button-next {
   top: 47%;
-  right: 10px;
+  right: 1rem;
+  font-size: 24px;
+
 }
 .nav-button-back {
   top: 47%;
   left: 2rem;
+  font-size: 24px;
+
 }
 
-.additional-image-container {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
+.image-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+
+  transform: translateX(-50%);
+  z-index: 1;
+  height: 40%;
+  width: 45rem;
+
+  background-color: var(--foreground-color);
+}
+  .image-navigation button {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0;
+    background-color: var(--foreground-color);
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+   
+  }
+.additional-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    position: relative;
 
-<<<<<<< HEAD
-    background-color: var(--foreground-color);
-=======
-    background-color: #f0f0f0;
->>>>>>> f4c000e (Project image navigation and re-did the color palette)
-    padding: 0.5rem;
     box-sizing: border-box;
-    overflow: hidden;
-    height: 40%;
-    max-width: calc(100% - 2rem);
+    height: 100%;
+    width: 100%;
+    overflow-x: visible;
+    overflow-y: hidden;
+
+    border-right: 2px solid var(--text-color);
+    border-left: 2px solid var(--text-color);
 }
 .additional-image-container img {
   display: block;
-  width: 40%;
   height: auto;
-  max-width: 45%;
-  max-height: 100%;
   object-fit: contain;
   flex: 0 0 auto;
+  max-height: 100%;
+  overflow: hidden;
 }
+
+.open-image-navigation {
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  font-size: 18px;
+  display: block;
+  border-bottom: none;
+
+}
+

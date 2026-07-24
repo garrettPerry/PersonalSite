@@ -3,7 +3,7 @@ TO-DO
 ======
 BIG STUFF
 1. @Media, screen resize based on aspect ratio
-2. Convert to NodeJS project for flexibility
+2. Convert to NodeJS project for flexibility DONE
 3. Host site through NAS
 4. Fill out projects page
 5. Fill out photos page

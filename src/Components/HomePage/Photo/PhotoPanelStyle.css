@@ -19,7 +19,7 @@
   top: 85%;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--foreground-color);
+  background: var(--header-color);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   padding: 5px 10px;

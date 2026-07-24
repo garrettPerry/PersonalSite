@@ -4,11 +4,7 @@
   grid-template-areas: 
     "project-image project-body";
 
-<<<<<<< HEAD
   background: var(--foreground-color);
-=======
-  background: #F4E4D1FF;
->>>>>>> f4c000e (Project image navigation and re-did the color palette)
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   -webkit-border-top-right-radius: 25px;
@@ -38,6 +34,9 @@
     display: block;    
     border: 10px solid var(--foreground-color);
     cursor: zoom-in;
+
+    align-self: center;
+    max-width: 302.5px;
   }
 
 
