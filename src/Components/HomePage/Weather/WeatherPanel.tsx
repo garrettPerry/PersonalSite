@@ -20,6 +20,7 @@ function WeatherPanel() {
                 <span>weather</span>
             </div>
             <div className="weather-content">
+                <img src='src/Assets/AssetPhotos/underConstruction.png'/>
                 {/* <a
                     className="weatherwidget-io"
                     href="https://forecast7.com/en/33d75n84d39/atlanta/"

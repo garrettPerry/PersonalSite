@@ -7,7 +7,7 @@ return (
             <span>Webring</span>
         </div>
         <div className="panel-body">
-            <p>Webring</p>
+            <img src='src/Assets/AssetPhotos/underConstruction.png'/>
         </div>
     </div>
 )

@@ -11,8 +11,8 @@ const imageArray = [
 function PhotosPage() {
     return (
         <div>
-            <NavBar />
-            <PhotoContent imageArray={imageArray} />
+            
+            <PhotoContent/>
         </div>
     );
 }

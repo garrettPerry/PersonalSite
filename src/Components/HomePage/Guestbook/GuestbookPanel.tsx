@@ -7,7 +7,7 @@ return(
             <span>Guestbook</span>
         </div>
         <div className="panel-body">
-            <p>Guestbook</p>
+            <img src='src/Assets/AssetPhotos/underConstruction.png'/>
         </div>
     </div>
 

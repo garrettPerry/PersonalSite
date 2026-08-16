@@ -7,7 +7,7 @@ return (
             <span>Visitor Counter</span>
         </div>
         <div className="panel-body">
-            <p>Visitor Counter</p>
+            <img src='src/Assets/AssetPhotos/underConstruction.png'/>
         </div>
   </div>
 )
