@@ -29,8 +29,8 @@ const cardPhotoSite = ["src/Assets/PhotoOfTheDay/tobe1.jpg"];
 //https://www.webdesignmuseum.org/gallery/australian-infront-2003
 
 //NAS PROJECT - robot text, change in future
-const cardHeaderNAS = "NAS Project";
-const cardContentNAS1 = "This project was a personal project to build a NAS server for my home. I had been using a Synology NAS for years, but I wanted to build my own server to learn more about how they work and to have more control over the hardware and software. I built the server using a custom-built PC with a Ryzen 5 3600 CPU, 16GB of RAM, and 4x4TB WD Red drives in RAID 5. I installed Unraid as the operating system and set up various services such as Plex, Nextcloud, and Home Assistant. The server has been running smoothly for over a year now and has been a great learning experience.";
+const cardHeaderNAS = "Personal NAS Server";
+const cardContentNAS1 = "This is a personal project to build a NAS server for my home. I found a good deal on a pre-built synology server which was actually cheaper than if I had build one myself. The software included in the server is very handy and has allowed me to set up a personal cloud, a media server, and a place to store snapshots of my computer in the event of a failure.";
 
 const cardContentNAS2 = "Some of the challenges I faced during this project included configuring the RAID array, setting up the various services, and ensuring that the server was secure. I also had to learn about networking and how to properly configure my router to allow remote access to the server.";
 

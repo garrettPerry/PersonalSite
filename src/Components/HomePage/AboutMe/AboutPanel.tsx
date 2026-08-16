@@ -7,7 +7,7 @@ return (
         <div className="panel-header">
             <span>About</span>
         </div>
-        <div className="panel-body">
+        <div className="about-body">
             
             <p>
                 Welcome to my website, there are many like it but this one is mine! I have a degree in software development, but have transitioned into working in the IT field and thought this would be a fun project to keep up my programming skills. As is likely apparent I'm no frontend developer, but I was inspired by neocities and older sites to make something a little outside of my comfort zone. Speaking of my comfort zone I typically work in languages like C#, Java, Python and Javascript, click on the <Link to="/projects">projects</Link> tab to see what I've worked on!

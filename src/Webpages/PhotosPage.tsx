@@ -11,7 +11,6 @@ const imageArray = [
 function PhotosPage() {
     return (
         <div>
-            
             <PhotoContent/>
         </div>
     );

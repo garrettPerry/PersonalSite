@@ -6,8 +6,13 @@
   margin-bottom: 3px;
 }  
 
-.panel-body {
+.about-body {
   overflow: auto;
-  
+  padding: 8px;
+  line-height: 1.25;
+}
+.about-body p {
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 

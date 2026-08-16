@@ -7,70 +7,37 @@
     max-width: 1225px;
     width: 90%;
     margin:auto;
-    padding: 0px 0px;
+    padding: 2rem 0px;
     
 }
-
-.titleBar {
-    display: flex;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    justify-self: center;
-}
-
-.titleBar a {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: left;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: color 0.2s, background 0.15s;
-  color: var(--text-color);
-}
-
-.titleBar a::after {
-  content: "";
-  position: absolute;
-  bottom: 3px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: var(--accent-color);
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.35s ease;
-}
-
-.titleBar a:hover {
-  color: var(--accent-color);
-}
-
-.titleBar a:hover::after {
-  transform: scaleX(.8);
-}
-
-
-
 
 .photo-gallery {
     display: flex;
     gap: 20px;
+    width: 90%;
+    justify-self: center;
 }
 
 .column {
     display: flex;
     flex-direction: column;
     gap: 20px;
+        overflow: visible;
 }
 
-.photo img {
+.photo-content img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
     object-fit: cover;
-
+    transform-origin: center center;
+    transition: transform 0.35s ease-in-out;
+}
+.photo-content img:hover {
+    transform: scale(1.2);
+    cursor: zoom-in;
+    position: relative;
+    z-index: 10;
 }
 
 @media(max-width: 768px) {

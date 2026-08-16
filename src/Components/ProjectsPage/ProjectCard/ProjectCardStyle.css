@@ -13,7 +13,8 @@
   -moz-border-radius-bottomright: 25px;
   box-shadow: 5px 10px 10px hsl(0deg 0% 0% / 0.35);
 
-  /* max-height: 350px; breaks read more function*/
+  max-width: 1500px;
+  align-self: center;
 }
 
 .project-image {
@@ -36,7 +37,7 @@
     cursor: zoom-in;
 
     align-self: center;
-    max-width: 302.5px;
+    max-width: 302px;
   }
 
 
