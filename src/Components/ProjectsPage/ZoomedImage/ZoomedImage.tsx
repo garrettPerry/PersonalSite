@@ -11,7 +11,7 @@ function closeZoom() {
 
        imageNavigation.style.display = "none";
        imageContainer.style.display = "none";
-       arrayIncrement=0;
+       setArrayIncrement(0);
 }
 var imageArray = props.imageArray;
 var [arrayIncrement, setArrayIncrement] = useState(0);
@@ -28,25 +28,7 @@ function handlePrevious() {
        }
        else { setArrayIncrement(imageArray.length - 1); }
 }
-function parseImageArray(props: { isForward: boolean, changeValue: boolean}) {
-       if (props.isForward) {
-              if (imageArray[arrayIncrement+1] !== undefined) {
-                     if (props.changeValue) {
-                            setArrayIncrement(arrayIncrement + 1);
-                     }
-                     return(arrayIncrement+1);
-              } else { setArrayIncrement(0);}
-       }
 
-       else {
-              if (imageArray[arrayIncrement-1] !== undefined) {
-                     if (props.changeValue) {
-                            setArrayIncrement(arrayIncrement - 1);
-                     }
-                     return(arrayIncrement-1);
-              } else { setArrayIncrement(0);}
-       }
-}
 //click the button to minimize the additional images panel
 function handleAdditionalImages() {
        var imageNavigation = document.querySelector(".image-navigation") as HTMLElement;

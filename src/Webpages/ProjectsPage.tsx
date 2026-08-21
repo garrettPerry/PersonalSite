@@ -8,8 +8,8 @@ const cardHeaderNOC = "Service Desk Remote Tool";
 const cardContentNOC1 =
        "The main use of this software is to speed up daily tasks used at the Service Desk such as remoting and pinging computers, as well as interfacing with other software that is frequently used such as Goverlan, Ultra VNC, Bigfix, ServiceNow, BeyondTrust and others. Some other common uses are clocking in and out for the day, connecting to status boards which are used to track phone calls and providing convenient links to applications. This software was created in 2007 and has been in continuous use  since, changing over the years to add new features or remove deprecated. The tool was written in Visual Basic 6 and was used in that form until I took over development in 2025. I learned Visual Basic syntax,";
 const cardContentNOC2 = 
-       " but there was concern that future hires who may be able to maintain the tool would not know or want to learn visual basic, so I ported it to C# which was a much more straightforward process than I initially expected.\n\nSome new employees found the tool overwhelming when starting out, so I actually attempted to redesign the tool to clear up the visual clutter. Many people that had been at the Service Desk for years did not want the original tool changed, so I developed both concurrently. The new tool was split into four pages, with the goal of only having to change pages once or twice per day and included custom buttons on the home page that could be mapped to features found on other pages. In the end, having two versions of the same tool was increasing complexity with minimal payoff and split the user base into two groups. Since the new version was less popular I scrapped its development and had the users of the redesign mo,ve to the original tool. LESSON LEARNED: Don't fix what ain't broke. Here's a few of the features I've added: \n\n1. Sped up communication with Goverlan, reducing delay between button press and Goverlan connection attempts from ~2 seconds to near instant. \n2. Implemented a log file that tracks button presses, which user pressed it, when it was pressed and the current software version. \n3. Automatically checks for updates on launch and prompts user to . Previously new versions had to be manually pulled from a remote drive. \n4. Administrators set the default browser to Edge in windows, implemented a system to change the default browser for any links opened from the tool. \n5. Plenty more small changes, bug fixes and optimizations.";
-const mainPhotoNOC = [
+       " but there was concern that future hires who may be able to maintain the tool would not know or want to learn visual basic, so I ported it to C# which was a much more straightforward process than I initially expected.\n\nSome new employees found the tool overwhelming when starting out, so I actually attempted to redesign the tool to clear up the visual clutter. Many people that had been at the Service Desk for years did not want the original tool changed, so I developed both concurrently. The new tool was split into four pages, with the goal of only having to change pages once or twice per day and included custom buttons on the home page that could be mapped to features found on other pages. In the end, having two versions of the same tool was increasing complexity with minimal payoff and split the user base into two groups. Since the new version was less popular I scrapped its development and had the users of the redesign move to the original tool. LESSON LEARNED: Don't fix what ain't broke. Here's a few of the features I've added: \n\n1. Sped up communication with Goverlan, reducing delay between button press and Goverlan connection attempts from ~2 seconds to near instant. \n2. Implemented a log file that tracks button presses, which user pressed it, when it was pressed and the current software version. \n3. Automatically checks for updates on launch and prompts user to update if needed. Previously new versions had to be manually pulled from a remote drive. \n4. Administrators set the default browser to Edge in windows, implemented a system to change the default browser for any links opened from the tool. \n5. Plenty more small changes, bug fixes and optimizations.";
+const cardPhotoNOC = [
        "src/Assets/ProjectPhotos/NocTool/NocTool.png",
        "src/Assets/ProjectPhotos/NocTool/NocRedesign1.png",
        "src/Assets/ProjectPhotos/NocTool/NocRedesign2.png",
@@ -23,23 +23,25 @@ const cardHeaderSite = "gperry.live";
 const cardContentSite1 = 
        "This website is a standard react project using HTML, CSS and Typescript. It has no real purpose, being somewhere between coding practice, personal online storage and a resume. Although I did work on a React project in college (see below), I never worked on the front end, mainly doing database work and making sure data flowed between the pages. As you can see this site is far more focused on aesthetics than data flow and functionality but I also have a terrible eye for aesthetics which leaves me quite the conundrum. I spent a lot of time scrolling through webrings of different people’s personal websites, and while I appreciate the whimsy of many people’s sites, I was looking for mine to be a bit more minimalist and cohesive, hence the design you see here.";
 const cardContentSite2 = 
-       "\n\nRegardless of my own creative limitations, I wanted to create a website that combined modern minimal style with some web 2.0 charm. The two inspirations for the home page is my favorite modern design language, Microsoft’s Metro, and the Australia INfront 2003 site. <link>  Metro, despite its flawed implementation in Windows 8, had a lot of potential and I’m still a big fan of the solid obvious geometry and clear distinction between different functionality. The INfront site inspiration was for similar reasons, each aspect of the site is clearly broken down in different areas and I love the look of a site that looked very futuristic in the early 2000’s. Although Metro’s initial implementation does look admittedly dated, its strange to think my modern inspiration and retro inspiration were only released 7 years apart, yet they look and feel so different.\n\nThis website is going to be a work in progress likely until I cease development, there is a lot of functionality that isn’t yet finished and I’m sure I’ll come up with new idea much faster than I’ll be able to implement them. If you have any ideas or comments about the site, let me know in the guestbook<link> or shoot me an email at webmaster@gperry.live<link>" + "";
-
+       "\n\nRegardless of my own creative limitations, I wanted to create a website that combined modern minimal style with some web 2.0 charm. The two inspirations for the home page is my favorite modern design language, Microsoft’s Metro, and the Australia INfront 2003 site. <link>  Metro, despite its flawed implementation in Windows 8, had a lot of potential and I’m still a big fan of the solid obvious geometry and clear distinction between different functionality. The INfront site inspiration was for similar reasons, each aspect of the site is clearly broken down in different areas and I love the look of a site that looked very futuristic in the early 2000’s. Although Metro’s initial implementation does look admittedly dated, its strange to think my modern inspiration and retro inspiration were only released 7 years apart, yet they look and feel so different.\n\nThis website is going to be a work in progress likely until I cease development, there is a lot of functionality that isn’t yet finished and I’m sure I’ll come up with new idea much faster than I’ll be able to implement them. If you have any ideas or comments about the site, let me know in the guestbook or shoot me an email at webmaster@gperry.live" + "";
 const cardPhotoSite = ["src/Assets/PhotoOfTheDay/tobe1.jpg"];
-//https://www.webdesignmuseum.org/gallery/australian-infront-2003
 
-//NAS PROJECT - robot text, change in future
+
 const cardHeaderNAS = "Personal NAS Server";
-const cardContentNAS1 = "This is a personal project to build a NAS server for my home. I found a good deal on a pre-built synology server which was actually cheaper than if I had build one myself. The software included in the server is very handy and has allowed me to set up a personal cloud, a media server, and a place to store snapshots of my computer in the event of a failure.";
-
-const cardContentNAS2 = "Some of the challenges I faced during this project included configuring the RAID array, setting up the various services, and ensuring that the server was secure. I also had to learn about networking and how to properly configure my router to allow remote access to the server.";
-
-const mainPhotoNas = ["src/Assets/ProjectPhotos/Nas.png"];
+const cardContentNAS1 = "This is a personal project to build a NAS server for my home. I found a good deal on a pre-built synology server which was actually cheaper than if I had build one myself. The software included in the server is very handy and has allowed me to set up a personal cloud, a media server, a place to store snapshots of my computer in the event of a failure, and of course host this website. I am currently using a raid array with three 2TB HDDs which gives me plenty of space for my needs. I would love to upgrade but not until memory prices come down a bit.";
+const cardContentNAS2 = ".";
+const cardPhotoNas = ["src/Assets/ProjectPhotos/Nas.png"];
 
 
+const cardHeaderCapstone = "Senior Capstone Project";
+const cardContentCapstone1 = "more to come\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t.";
+const cardContentCapstone2 = "";
+const cardPhotoCapstone = ["src/Assets/AssetPhotos/underConstruction.png"];
 
-
-
+const cardHeaderConnect = "Senior Capstone Project";
+const cardContentConnect1 = "more to come\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t.";
+const cardContentConnect2 = "";
+const cardPhotoConnect = ["src/Assets/AssetPhotos/underConstruction.png"];
 
 
 
@@ -70,7 +72,7 @@ return(
                      header = {cardHeaderNOC}
                      content={cardContentNOC1} 
                      moreContent = {cardContentNOC2} 
-                     photoArray={mainPhotoNOC}
+                     photoArray={cardPhotoNOC}
                      openZoom={openZoom}/>
               <ProjectCard 
                      header = {cardHeaderSite}
@@ -82,19 +84,19 @@ return(
                      header = {cardHeaderNAS}
                      content={cardContentNAS1} 
                      moreContent = {cardContentNAS2} 
-                     photoArray={mainPhotoNas}
+                     photoArray={cardPhotoNas}
                      openZoom={openZoom}/>
               <ProjectCard 
-                     header = {cardHeaderNOC}
-                     content={cardContentNOC1} 
-                     moreContent = {cardContentNOC2} 
-                     photoArray={mainPhotoMisc}
+                     header = {cardHeaderCapstone}
+                     content={cardContentCapstone1} 
+                     moreContent = {cardContentCapstone2} 
+                     photoArray={cardPhotoCapstone}
                      openZoom={openZoom}/>
               <ProjectCard 
-                     header = {cardHeaderNOC}
-                     content={cardContentNOC1} 
-                     moreContent = {cardContentNOC2} 
-                     photoArray={mainPhotoMisc}
+                     header = {cardHeaderConnect}
+                     content={cardContentConnect1} 
+                     moreContent = {cardContentConnect2} 
+                     photoArray={cardPhotoConnect}
                      openZoom={openZoom}/>
               
        </div>

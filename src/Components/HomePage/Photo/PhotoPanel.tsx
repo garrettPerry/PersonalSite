@@ -6,8 +6,8 @@ return(
     <div className="panel-header">
       <span>Photo of the Day</span>
     </div>
-    <div className="photo-content">
-      <img src="src/Assets/PhotoOfTheDay/tobe2.jpg" alt="Photo of the Day"/>
+    <div className="photo-of-the-day">
+      <img src="src/Assets/PhotoOfTheDay/tobe2.jpg" alt="Photo of the Day" className='feature-photo'/>
       <div className="photo-description"> May 25th 2024 </div>
     </div>
   </div>

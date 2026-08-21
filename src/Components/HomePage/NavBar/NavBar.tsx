@@ -9,7 +9,7 @@ function NavBar() {
             <Link to='/'>Home</Link>
             <Link to='/projects'>Projects</Link>
             <Link to='/photos'>Photos</Link>
-            <Link to='/'>Guestbook</Link>
+            <Link to='/PageNotFound'>Guestbook</Link>
         </div>
     </nav>       
     )

@@ -11,8 +11,6 @@
   position: fixed;
   inset: 25% 5%;
   z-index: 2;
-  /* overflow: hidden; */
-  box-sizing: border-box;
   padding: 1rem;
 
   background-color: var(--header-color);  display: flex;

@@ -53,10 +53,3 @@ export default ProjectsCard
 
 
 
-//remove new project image and css, need to have a div appear on hover that can display mulitple new images and select between them
-
-
-// adds a new image to the page when the showMore variable =TRUE
-// {showMore && (
-//       <div className="project-image-2">
-//         <img src="src/Assets/ProjectPhotos/NocTool.png" alt="Additional Project Image" />

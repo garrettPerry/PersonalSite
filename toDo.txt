@@ -28,10 +28,11 @@ HOME
 PROJECTS
 1. Header/intro DONE
 2. Project containers DONE
-3. Photos that can be expanded (copy from Photos page)
+3. Photos that can be expanded (copy from Photos page) DONE
 4. Fix css so project panels take up same percentage of the screen as the home page
     a. Should be full height and display all the text DONE
 5. Implement the see more/see less function DONE
+6. Fill out Project text
 
 PHOTOS -- See Dimden.dev
 1. Photo viewer with click to expand. 
@@ -46,6 +47,8 @@ Peronsal Lists --could use to keep track/remember stuff
 2. Games
 3. Music/Concerts
 
+
+Make webmaster@gperry.live
 
 Make site responsive to different screen sizes
 https://www.youtube.com/watch?v=2IV08sP9m3U
