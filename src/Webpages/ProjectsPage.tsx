@@ -41,10 +41,13 @@ const cardPhotoCapstone = ["src/Assets/AssetPhotos/underConstruction.png"];
 const cardHeaderConnect = "Connect Accounting System";
 const cardContentConnect1 = "This site was created during my senior year of college for a 3 month web development course with a focus on building and hosting a site and storing data through the college's server. My group of three had the freedom to choose the architecture of the site, so we decided to go with a React project and use MySQL for the database. My role in the project was taking user data and moving it to and from the database, which turned out to be the most intensive role in the group. As you can probably tell from the pictures the front-end was not a priority, however despite the rough looking exterior, this project actually had a fairly impressive back-end for something made by students over the course of one semester.";
 const cardContentConnect2 = "The site was meant to be an accounting system, of course with an artificially limited scope. We created a chart of accounts, ledger and user management tab. The chart of accounts and ledger were specified with exactly what they should include, however we went above what was require and had certain features locked behind different levels of access depending on what level of access the user was provisioned. We also designed an account creation and management system, including sending verification emails. Since we built the site to use dynamic web pages we were able to save the state the page between sessions, although we did still add save buttons because it felt wrong to not have them. Again this site doesn’t look great, however the back end was pretty solid and is definitely the college project I was most proud of.";
-const cardPhotoConnect = ["src/Assets/AssetPhotos/underConstruction.png"];
-
-
-
+const cardPhotoConnect = [
+       "src/Assets/ProjectPhotos/ConnectSite/ConnectHomepage.png",
+       "src/Assets/ProjectPhotos/ConnectSite/ConnectSignUp.png",
+       "src/Assets/ProjectPhotos/ConnectSite/ConnectHomepage.png",
+       "src/Assets/ProjectPhotos/ConnectSite/ConnectLedger.png",
+       "src/Assets/ProjectPhotos/ConnectSite/ConnectUserTable.png"
+];
 
 //MISC IMAGES FOR TESTING
 const mainPhotoMisc = [

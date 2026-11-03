@@ -1,7 +1,55 @@
-.weather-content img {
-    object-fit: contain;
-    width: 100%;
+.weatherPanelCard {
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 215px;
+}
+.weatherPanelCard img {
+    width: 60%;
     height: auto;
-    max-height: 210px;
-    object-position: center;
+    object-fit: contain;
+}
+
+.weatherPanelTop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+.weatherPanelTopLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.weatherPanelTopRight {
+    width: 50%;
+    margin-left: 12%;
+}
+
+
+.weatherPanelBottom {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+    margin-left: 12%;
+}
+
+.weatherPanelBottomLeft {
+    width: 50%;
+}
+
+.weatherPanelBottomRight {
+    width: 50%;
 }
