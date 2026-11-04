@@ -27,7 +27,7 @@ function ProjectsCard(
       </div>
     
     <div className="project-body" style={{gridArea: 'project-body'}}>
-      <h3 className="project-title">{props.header}</h3>
+      <h3 className="project-header">{props.header}</h3>
       <div className="project-desc-box">
         <p>{/* pressing the button makes the dots disappear and adds moreContent*/}
           {props.content}

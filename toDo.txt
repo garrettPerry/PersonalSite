@@ -22,7 +22,7 @@ HOME
         II. dots on the bottom to indicate project/page number
           i. click the dots to move pages  
 4. visit counter
-5. Weather
+5. Weather DONE
 6. Guest book
 
 PROJECTS

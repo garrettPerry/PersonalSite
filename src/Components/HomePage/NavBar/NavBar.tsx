@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function NavBar() {
     return(
     <nav>
-        <a className="navlogo" href="#home"> gperry.live </a>
+        <a className="navlogo" href="/"> gperry.live </a>
         <div className="nav-links">
             <Link to='/'>Home</Link>
             <Link to='/projects'>Projects</Link>

@@ -12,6 +12,8 @@ body {
   font-size: 15px;
   color: var(--text-color);
   font-family: "Cormorant Garamond", serif;
+  
+  padding: 20px 0;
 }
   body a {
     color: var(--accent-color);
@@ -20,9 +22,10 @@ body {
 .homepage-body {
   display: grid;
   gap: 20px;
-  padding: 20px;
+  width: min(80vw, 1000px);
+  margin: 0 auto;
   
-  grid-template-columns: 25% 25% 25%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: 325px 325px 240px 240px;
   grid-template-areas: 
     "banner banner banner"
@@ -30,15 +33,22 @@ body {
     "weather projects projects"
     "visitors guestbook webring";
   justify-content: center;  
-
+  
+  align-content: center;
+  margin-top: 20px;
 }
 
 .projectspage-body {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: min(80vw, 1000px);
   margin: 0 auto;
   gap: 35px;
+  margin-top: 20px;
+}
+
+.photospage-body {
+  margin-top: 20px;  
 }
 
 /* Panels */
