@@ -5,6 +5,11 @@ import { fetchWeatherApi } from "openmeteo";
 
 function WeatherPanel() {
     const [weatherData, setWeatherData] = useState<any>(null);
+    const [weatherDataCelcius, setWeatherDataCelsius] = useState<any>(null);
+    const [isFahrenheit, setIsFahrenheit] = useState(true);
+
+    const activeWeatherData = isFahrenheit ? weatherData : weatherDataCelcius ?? weatherData;
+
     //Runs on page load
     useEffect(() => {
         APICall();
@@ -54,7 +59,28 @@ function WeatherPanel() {
         },
     };
         setWeatherData(formatData(nextWeatherData));
+        convertToCelcius(nextWeatherData);
     }
+    //takes weather data, makes a copy, converts to C then formats
+    function convertToCelcius(data: any) {
+        //written this way to work with formatData()
+        const celsiusData = {
+            current: {
+                temperature_2m: (data.current.temperature_2m - 32) * 5 / 9,
+                apparent_temperature: (data.current.apparent_temperature - 32) * 5 / 9,
+                relative_humidity_2m: data.current.relative_humidity_2m,
+                wind_speed_10m: data.current.wind_speed_10m * 1.61,
+                precipitation: data.current.precipitation * 2.54,
+                is_day: data.current.is_day,
+            },
+            hourly: {
+                precipitation_probability: data.hourly.precipitation_probability,
+            }
+        };
+        setWeatherDataCelsius(formatData(celsiusData));
+    }
+
+
     //shortens weatherData
     function formatData(data: any) {
         const currentTemperature = data.current.temperature_2m.toFixed(1);
@@ -68,7 +94,6 @@ function WeatherPanel() {
 
         const isDay = data.current.is_day;
 
-
         return {
             currentTemperature,
             humidity,
@@ -78,6 +103,34 @@ function WeatherPanel() {
             precipitationProbability,
             isDay
         };
+    }
+    //returns formatted data and correct unit
+    function getWeatherData(input:string) {
+        const data = activeWeatherData;
+        const fahrenheitUnits = ["°F", "mph", "in"];
+        const celsiusUnits = ["°C", "kph", "cm"];
+        const correctUnits = isFahrenheit ? fahrenheitUnits : celsiusUnits;
+
+        if (!data) {
+            return "Loading..."
+        }
+
+        switch (input) {
+            case "currentTemperature": 
+                return data.currentTemperature + correctUnits[0];
+            case "apparentTemperature":
+                return data.apparentTemperature + correctUnits[0]; 
+            case "humidity":
+                return data.humidity + "%";
+            case "windSpeed":
+                return data.windSpeed + correctUnits[1];
+            case "precipitation": 
+                return data.precipitation + correctUnits[2];
+            case "precipitationProbability":
+                return data.precipitationProbability + "%";
+            default:
+                return "Loading...";
+        }
     }
 
     //chooses the correct weather icon
@@ -115,6 +168,10 @@ function WeatherPanel() {
         return <img src={`src/Assets/AssetPhotos/WeatherIcons/${icon}`} alt={alt} />;
     }
 
+    function changeUnit() {
+        setIsFahrenheit((prev) => !prev);
+    }
+
     return (
         <div className="panel panel-weather" style={{ gridArea: 'weather' }}>
             <div className="panel-header">
@@ -127,19 +184,22 @@ function WeatherPanel() {
                         {chooseIcon()}
                     </div>
                     <div className="weatherPanelTopRight">
-                        <h1>{weatherData ? `${weatherData.currentTemperature}°F` : "Loading..."}</h1>
-                        <p> Feels like: {weatherData ? `${weatherData.apparentTemperature}°F` : "Loading...."}</p>
+                        <button className="unitSelection" id="unitSelection" onClick={changeUnit}>
+                            {isFahrenheit ? "°C" : "°F"}
+                        </button>
+                        <h1>{getWeatherData("currentTemperature")}</h1>
+                        <p> Feels like: {getWeatherData("apparentTemperature")}</p>
                     </div>
                 </div>
                 <div className="weatherPanelBottom">
                     <div className="weatherPanelBottomLeft">
-                        <p> Humidity: {weatherData ? `${weatherData.humidity}%` : "Loading...."}</p>
-                        <p> Wind Speed: {weatherData ? `${weatherData.windSpeed} mph` : "Loading...."}</p>
+                        <p> Humidity: {getWeatherData("humidity")}</p>
+                        <p> Wind Speed: {getWeatherData("windSpeed")}</p>
 
                     </div>
                     <div className="weatherPanelBottomRight">
-                        <p> Precipitation: {weatherData ? `${weatherData.precipitation} in` : "Loading...."}</p>
-                        <p> Chance of rain: {weatherData ? `${weatherData.precipitationProbability}%` : "Loading...."}</p>
+                        <p> Precipitation: {getWeatherData("precipitation")}</p>
+                        <p> Chance of rain: {getWeatherData("precipitationProbability")}</p>
                     </div>
                 </div>
             </div>

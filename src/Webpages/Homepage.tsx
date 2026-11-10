@@ -4,7 +4,6 @@ import PhotoOfTheDay from '../Components/HomePage/Photo/PhotoPanel.tsx';
 import Webring from '../Components/HomePage/Webring/WebringPanel.tsx';
 import Projects from '../Components/HomePage/Projects/ProjectsPanel.tsx';
 import Weather from '../Components/HomePage/Weather/WeatherPanel.tsx';
-import Visitors from '../Components/HomePage/VisitorCounter/VisitorPanel.tsx'
 import Guestbook from '../Components/HomePage/Guestbook/GuestbookPanel.tsx';
 import NavBar from '../Components/HomePage/NavBar/NavBar.tsx';
 
@@ -19,7 +18,6 @@ return (
         <PhotoOfTheDay />
         <Weather />
         <Projects />
-        <Visitors />
         <Guestbook />
         <Webring />
     </main>

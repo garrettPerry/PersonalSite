@@ -95,7 +95,7 @@
   .project-desc-box p{
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 40px
+    margin-right: 40px;
   }
     .project-desc-box button{
       color: var(--accent-color);

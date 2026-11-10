@@ -29,9 +29,9 @@ body {
   grid-template-rows: 325px 325px 240px 240px;
   grid-template-areas: 
     "banner banner banner"
-    "about about photo"
-    "weather projects projects"
-    "visitors guestbook webring";
+    "about photo  webring"
+    "about weather guestbook"
+    "projects projects guestbook";
   justify-content: center;  
   
   align-content: center;
