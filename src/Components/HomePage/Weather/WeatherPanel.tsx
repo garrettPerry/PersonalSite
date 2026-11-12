@@ -2,6 +2,15 @@ import { useEffect, useState } from 'react';
 import './WeatherPanelStyle.css';
 import { fetchWeatherApi } from "openmeteo";
 
+//imports all weather icons, barely have a grasp on how this works but it does
+const weatherIcons = Object.fromEntries(
+    Object.entries(
+        import.meta.glob('../../../Assets/AssetPhotos/WeatherIcons/*.png', {
+            eager: true,
+            import: 'default',
+        })
+    ).map(([path, url]) => [path.split('/').pop()!, url as string])
+);
 
 function WeatherPanel() {
     const [weatherData, setWeatherData] = useState<any>(null);
@@ -164,8 +173,8 @@ function WeatherPanel() {
                 icon = "weatherSnow.png";
                 alt = "snow icon"
             }
-        }    
-        return <img src={`src/Assets/AssetPhotos/WeatherIcons/${icon}`} alt={alt} />;
+        }
+        return <img src={weatherIcons[icon]} alt={alt} />;
     }
 
     function changeUnit() {

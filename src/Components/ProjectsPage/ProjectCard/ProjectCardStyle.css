@@ -5,14 +5,7 @@
     "project-image project-body";
 
   background: var(--foreground-color);
-  /*square gang fuck circles
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  -webkit-border-top-right-radius: 25px;
-  -webkit-border-bottom-right-radius: 25px;
-  -moz-border-radius-topright: 25px;
-  -moz-border-radius-bottomright: 25px; */
-  box-shadow: 5px 10px 10px hsl(0deg 0% 0% / 0.35);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.35);
 
   max-width: 1500px;
   align-self: center;

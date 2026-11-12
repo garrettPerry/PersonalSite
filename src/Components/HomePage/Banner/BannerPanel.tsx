@@ -1,5 +1,6 @@
 import '/src/App.css';
 import './BannerPanelStyle.css';
+import bannerImage from '../../../Assets/AssetPhotos/BannerImage.png';
 
 function BannerPanel() {
 return(
@@ -8,7 +9,7 @@ return(
         <span>Feature</span>
         </div>
         <div className="banner-content">
-            <img src="src/Assets/AssetPhotos/BannerImage.png" alt="Banner Image"/>
+            <img src={bannerImage} alt="Banner Image"/>
         </div>
     </div>
 
