@@ -1,4 +1,5 @@
 import './WebringPanelStyle.css';
+import underConstructionImage from '../../../Assets/AssetPhotos/underConstruction.png';
 
 function Webring() {
 return (
@@ -7,7 +8,7 @@ return (
             <span>Webring</span>
         </div>
         <div className="panel-body">
-            <img src='src/Assets/AssetPhotos/underConstruction.png'/>
+            <img src={underConstructionImage} alt="Under construction placeholder" />
         </div>
     </div>
 )

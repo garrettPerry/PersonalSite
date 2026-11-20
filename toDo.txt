@@ -9,8 +9,8 @@ BIG STUFF
 5. Fill out photos page
 
 HOME
-1. Link photo of the day
-    a. randomize photo
+1. Link photo of the day DONE
+    a. randomize photo 
     b. background
     c. make photo fit marginally better
 2. Webring

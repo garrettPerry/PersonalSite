@@ -33,7 +33,10 @@
 .weatherPanelTopRight {
     width: 50%;
     margin-left: 12%;
+      transform: translate(0%, -10%);
+
 }
+
 
 .unitSelection {
     color: var(--text-color);
@@ -45,6 +48,8 @@
 
     display: block;
     margin-left: auto;
+    transform: translate(0%, +75%);
+
 }
     .unitSelection:hover {
         color: var(--header-color);

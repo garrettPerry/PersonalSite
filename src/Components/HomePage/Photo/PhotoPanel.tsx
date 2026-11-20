@@ -38,11 +38,6 @@ function PhotoPanel() {
     console.log(currentPhoto)
   }
 
-  function nextImage() {
-    //FIX
-    let currentPhotoIndex = allImages.indexOf(currentPhoto)+1;
-  }
-
   return(
     <div className="panel panel-photo" style={{ gridArea: 'photo'}}>
       <div className="panel-header">
@@ -50,10 +45,8 @@ function PhotoPanel() {
       </div>
       <div className="photo-of-the-day">
         {currentPhoto && <img src={currentPhoto} alt="Photo of the Day" className='feature-photo' />}
-        <div className="photo-description"> 
-          <button onClick={randomizeImage}> previous </button>
-          <button onClick={randomizeImage}> random </button>
-          <button onClick={randomizeImage}> next </button>
+        <div className="photo-randomizer"> 
+          <button onClick={randomizeImage}> randomize </button>
         </div>
       </div>
     </div>

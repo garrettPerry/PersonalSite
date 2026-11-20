@@ -1,5 +1,5 @@
 import NavBar from '../Components/HomePage/NavBar/NavBar.tsx';
-
+import gandalfImage from '../Assets/AssetPhotos/Gandalf.png';
 
 function Homepage() {
 return (
@@ -7,7 +7,7 @@ return (
     <header> <NavBar /> </header>
     <main className="homepage-body">
         <p> 404 this page broke </p>
-        <img src="src/Assets/AssetPhotos/Gandalf.png" alt="Gandalf contemplating his mistakes"></img>
+        <img src={gandalfImage} alt="Gandalf contemplating his mistakes"></img>
     </main>
     </>
 );

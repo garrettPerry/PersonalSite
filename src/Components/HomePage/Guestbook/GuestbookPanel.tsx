@@ -7,7 +7,17 @@ return(
             <span>Guestbook</span>
         </div>
         <div className="panel-body">
-            <img src='src/Assets/AssetPhotos/underConstruction.png'/>
+            <iframe 
+                src="https://www3.cbox.ws/box/?boxid=3562227&boxtag=6Nm9XS" 
+                width="100%" 
+                height="450" 
+                allowTransparency={true} 
+                allow="autoplay" 
+                frameBorder={0} 
+                marginHeight={0} 
+                marginWidth={0} 
+                scrolling="auto">
+            </iframe>	
         </div>
     </div>
 

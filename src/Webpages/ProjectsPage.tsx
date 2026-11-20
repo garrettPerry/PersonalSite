@@ -2,6 +2,21 @@ import { useState } from "react";
 import NavBar from "../Components/HomePage/NavBar/NavBar";
 import ProjectCard from "../Components/ProjectsPage/ProjectCard/ProjectCard";
 import ZoomedImage from "../Components/ProjectsPage/ZoomedImage/ZoomedImage";
+import nocToolImage from "../Assets/ProjectPhotos/NocTool/NocTool.png";
+import nocRedesign1Image from "../Assets/ProjectPhotos/NocTool/NocRedesign1.png";
+import nocRedesign2Image from "../Assets/ProjectPhotos/NocTool/NocRedesign2.png";
+import nocRedesign3Image from "../Assets/ProjectPhotos/NocTool/NocRedesign3.png";
+import nocRedesign4Image from "../Assets/ProjectPhotos/NocTool/NocRedesign4.png";
+import tobePhotoOfDayImage from "../Assets/Photos/tobe1.jpg";
+import nasImage from "../Assets/ProjectPhotos/Nas.png";
+import underConstructionImage from "../Assets/AssetPhotos/underConstruction.png";
+import connectHomepageImage from "../Assets/ProjectPhotos/ConnectSite/ConnectHomepage.png";
+import connectSignUpImage from "../Assets/ProjectPhotos/ConnectSite/ConnectSignUp.png";
+import connectLedgerImage from "../Assets/ProjectPhotos/ConnectSite/ConnectLedger.png";
+import connectUserTableImage from "../Assets/ProjectPhotos/ConnectSite/ConnectUserTable.png";
+import gandalfImage from "../Assets/AssetPhotos/Gandalf.png";
+import treeImage from "../Assets/Photos/tree.jpg";
+
 function Projectspage() {
 //Each project gets a cardContent# const as an array. Split so the read more button works
 const cardHeaderNOC = "Service Desk Remote Tool";
@@ -10,11 +25,11 @@ const cardContentNOC1 =
 const cardContentNOC2 = 
        " but there was concern that future hires who may be able to maintain the tool would not know or want to learn visual basic, so I ported it to C# which was a much more straightforward process than I initially expected.\n\nSome new employees found the tool overwhelming when starting out, so I actually attempted to redesign the tool to clear up the visual clutter. Many people that had been at the Service Desk for years did not want the original tool changed, so I developed both concurrently. The new tool was split into four pages, with the goal of only having to change pages once or twice per day and included custom buttons on the home page that could be mapped to features found on other pages. In the end, having two versions of the same tool was increasing complexity with minimal payoff and split the user base into two groups. Since the new version was less popular I scrapped its development and had the users of the redesign move to the original tool. LESSON LEARNED: Don't fix what ain't broke. Here's a few of the features I've added: \n\n1. Sped up communication with Goverlan, reducing delay between button press and Goverlan connection attempts from ~2 seconds to near instant. \n2. Implemented a log file that tracks button presses, which user pressed it, when it was pressed and the current software version. \n3. Automatically checks for updates on launch and prompts user to update if needed. Previously new versions had to be manually pulled from a remote drive. \n4. Administrators set the default browser to Edge in windows, implemented a system to change the default browser for any links opened from the tool. \n5. Plenty more small changes, bug fixes and optimizations.";
 const cardPhotoNOC = [
-       "src/Assets/ProjectPhotos/NocTool/NocTool.png",
-       "src/Assets/ProjectPhotos/NocTool/NocRedesign1.png",
-       "src/Assets/ProjectPhotos/NocTool/NocRedesign2.png",
-       "src/Assets/ProjectPhotos/NocTool/NocRedesign3.png",
-       "src/Assets/ProjectPhotos/NocTool/NocRedesign4.png",
+       nocToolImage,
+       nocRedesign1Image,
+       nocRedesign2Image,
+       nocRedesign3Image,
+       nocRedesign4Image,
 ];
 
 //GPERRY.LIVE
@@ -24,36 +39,36 @@ const cardContentSite1 =
        "This website is a standard react project using HTML, CSS and Typescript. It has no real purpose, being somewhere between coding practice, personal online storage and a resume. Although I did work on a React project in college (see below), I never worked on the front end, mainly doing database work and making sure data flowed between the pages. As you can see this site is far more focused on aesthetics than data flow and functionality but I also have a terrible eye for aesthetics which leaves me quite the conundrum. I spent a lot of time scrolling through webrings of different people’s personal websites, and while I appreciate the whimsy of many people’s sites, I was looking for mine to be a bit more minimalist and cohesive, hence the design you see here.";
 const cardContentSite2 = 
        "\n\nRegardless of my own creative limitations, I wanted to create a website that combined modern minimal style with some web 2.0 charm. The two inspirations for the home page is my favorite modern design language, Microsoft’s Metro, and the Australia INfront 2003 site. <link>  Metro, despite its flawed implementation in Windows 8, had a lot of potential and I’m still a big fan of the solid obvious geometry and clear distinction between different functionality. The INfront site inspiration was for similar reasons, each aspect of the site is clearly broken down in different areas and I love the look of a site that looked very futuristic in the early 2000’s. Although Metro’s initial implementation does look admittedly dated, its strange to think my modern inspiration and retro inspiration were only released 7 years apart, yet they look and feel so different.\n\nThis website is going to be a work in progress likely until I cease development, there is a lot of functionality that isn’t yet finished and I’m sure I’ll come up with new idea much faster than I’ll be able to implement them. If you have any ideas or comments about the site, let me know in the guestbook or shoot me an email at webmaster@gperry.live" + "";
-const cardPhotoSite = ["src/Assets/PhotoOfTheDay/tobe1.jpg"];
+const cardPhotoSite = [tobePhotoOfDayImage];
 
 
 const cardHeaderNAS = "Personal NAS Server";
 const cardContentNAS1 = "This is a personal project to build a NAS server for my home. I found a good deal on a pre-built synology server which was actually cheaper than if I had build one myself. The software included in the server is very handy and has allowed me to set up a personal cloud, a media server, a place to store snapshots of my computer in the event of a failure, and of course host this website. I am currently using a raid array with three 2TB HDDs which gives me plenty of space for my needs. I would love to upgrade but not until memory prices come down a bit.";
 const cardContentNAS2 = ".";
-const cardPhotoNas = ["src/Assets/ProjectPhotos/Nas.png"];
+const cardPhotoNas = [nasImage];
 
 
 const cardHeaderCapstone = "Senior Capstone Project";
 const cardContentCapstone1 = "more to come\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t.";
 const cardContentCapstone2 = "";
-const cardPhotoCapstone = ["src/Assets/AssetPhotos/underConstruction.png"];
+const cardPhotoCapstone = [underConstructionImage];
 
 const cardHeaderConnect = "Connect Accounting System";
 const cardContentConnect1 = "This site was created during my senior year of college for a 3 month web development course with a focus on building and hosting a site and storing data through the college's server. My group of three had the freedom to choose the architecture of the site, so we decided to go with a React project and use MySQL for the database. My role in the project was taking user data and moving it to and from the database, which turned out to be the most intensive role in the group. As you can probably tell from the pictures the front-end was not a priority, however despite the rough looking exterior, this project actually had a fairly impressive back-end for something made by students over the course of one semester.";
 const cardContentConnect2 = "The site was meant to be an accounting system, of course with an artificially limited scope. We created a chart of accounts, ledger and user management tab. The chart of accounts and ledger were specified with exactly what they should include, however we went above what was require and had certain features locked behind different levels of access depending on what level of access the user was provisioned. We also designed an account creation and management system, including sending verification emails. Since we built the site to use dynamic web pages we were able to save the state the page between sessions, although we did still add save buttons because it felt wrong to not have them. Again this site doesn’t look great, however the back end was pretty solid and is definitely the college project I was most proud of.";
 const cardPhotoConnect = [
-       "src/Assets/ProjectPhotos/ConnectSite/ConnectHomepage.png",
-       "src/Assets/ProjectPhotos/ConnectSite/ConnectSignUp.png",
-       "src/Assets/ProjectPhotos/ConnectSite/ConnectHomepage.png",
-       "src/Assets/ProjectPhotos/ConnectSite/ConnectLedger.png",
-       "src/Assets/ProjectPhotos/ConnectSite/ConnectUserTable.png"
+       connectHomepageImage,
+       connectSignUpImage,
+       connectHomepageImage,
+       connectLedgerImage,
+       connectUserTableImage
 ];
 
 //MISC IMAGES FOR TESTING
 const mainPhotoMisc = [
-       "src/Assets/AssetPhotos/Gandalf.png", 
-       "src/Assets/PhotoOfTheDay/tobe1.jpg", 
-       "src/Assets/PhotoOfTheDay/tree.jpg"];
+       gandalfImage,
+       tobePhotoOfDayImage,
+       treeImage];
 
 //Set up zoomed image functionality
 const [imageArray, setImageArray] = useState(mainPhotoMisc);
@@ -65,7 +80,6 @@ function openZoom(imagePath: string[]) {
        var imageElement = document.querySelector(".zoomed-image") as HTMLImageElement;
        imageElement.src = imagePath[0];
 }
-
 
 return(
        <>

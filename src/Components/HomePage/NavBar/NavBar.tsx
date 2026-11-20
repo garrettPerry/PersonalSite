@@ -7,9 +7,9 @@ function NavBar() {
         <a className="navlogo" href="/"> gperry.live </a>
         <div className="nav-links">
             <Link to='/'>Home</Link>
+            <Link to='/garage'>Garage</Link>
             <Link to='/projects'>Projects</Link>
             <Link to='/photos'>Photos</Link>
-            <Link to='/PageNotFound'>Guestbook</Link>
         </div>
     </nav>       
     )

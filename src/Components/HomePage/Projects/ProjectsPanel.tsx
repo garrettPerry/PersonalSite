@@ -1,5 +1,6 @@
 import './ProjectsPanelStyle.css';
 import { Link } from 'react-router-dom';
+import nocToolImage from '../../../Assets/ProjectPhotos/NocTool/NocTool.png';
 
 function ProjectsPanel() {
 return (
@@ -10,7 +11,7 @@ return (
     </div>
     <div className="projectpanel-card"> 
       <div className="projectpanel-image">
-        <img src="/src/Assets/ProjectPhotos/NocTool/NocTool.png" alt="Project Image" style={{gridArea: 'project-image'}} />
+        <img src={nocToolImage} alt="Project Image" style={{gridArea: 'project-image'}} />
       </div>   
       <div className="projectpanel-body" style={{gridArea: 'project-body'}}>
         <h3 className="projectpanel-title">Service Desk Remote Tool</h3>

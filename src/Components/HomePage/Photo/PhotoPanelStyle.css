@@ -16,16 +16,24 @@
   border: 10px solid #F4E4D1FF;
 }
 
-.photo-description {
+.photo-randomizer {
   position: absolute;
-  top: 97%;
-  left: 50%;
+  top: 98%;
+  left: 50%; 
   transform: translate(-50%, -50%);
   display: block;
   width: fit-content;
   background: var(--foreground-color);
-  border-radius: 8px;
-  padding: 5px 10px;
+  border-radius: 5px;
   z-index: 2;
   text-align: center;
 }
+.photo-randomizer button {
+  border-color: transparent;
+  border-bottom-color: var(--header-color);
+  background-color: transparent;
+
+  color: var(--font-color);
+  font-size: 14px;
+}
+
